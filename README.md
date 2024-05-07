@@ -1,7 +1,6 @@
 # Lista-automatica-Pyton
 Preencher lista de produtos automáticamente.
-
-# Exemplo computador de casa
+(Exemplo computador de casa)
 
 import pyautogui
 import time
