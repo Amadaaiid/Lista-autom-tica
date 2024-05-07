@@ -29,23 +29,23 @@ print(tabela)
 
 for linha in tabela.index:
 
-    pyautogui.click(x=-1200, y=440)
-    codigo = tabela.loc[linha, "codigo"]
-    pyautogui.write(str(codigo))
-    pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "marca"]))
-    pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "tipo"]))
-    pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "categoria"]))
-    pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
-    pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "custo"]))
+pyautogui.click(x=-1200, y=440)
+codigo = tabela.loc[linha, "codigo"]
+pyautogui.write(str(codigo))
+pyautogui.press("tab")
+pyautogui.write(str(tabela.loc[linha, "marca"]))
+pyautogui.press("tab")
+pyautogui.write(str(tabela.loc[linha, "tipo"]))
+pyautogui.press("tab")
+pyautogui.write(str(tabela.loc[linha, "categoria"]))
+pyautogui.press("tab")
+pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
+pyautogui.press("tab")
+pyautogui.write(str(tabela.loc[linha, "custo"]))
 
-    obs = str(tabela.loc[linha, "obs"])
-    if obs != "nan":
-        pyautogui.write(obs)
-    pyautogui.press("tab")
-    pyautogui.press("enter")
-    pyautogui.scroll(5000)
+obs = str(tabela.loc[linha, "obs"])
+if obs != "nan":
+    pyautogui.write(obs)
+pyautogui.press("tab")
+pyautogui.press("enter")
+pyautogui.scroll(5000)
